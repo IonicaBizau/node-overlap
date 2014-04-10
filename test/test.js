@@ -6,6 +6,8 @@ var a =
 "|              |\n" +
 "|              |\n" +
 "|              |\n" +
+"|              |\n" +
+"|              |\n" +
 "+--------------+"
 
 var b =
@@ -18,7 +20,7 @@ console.log(Overlap({
     who: a
   , with: b
   , where: {
-        x: 4
+        x: 10
       , y: 1
     }
 }));
