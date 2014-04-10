@@ -1,7 +1,7 @@
 Overlap
 =======
 
-Overlap two ASCII strings.
+Overlap two strings that contain new lines. Useful for ASCII drawings, for example.
 
 ## Example
 
