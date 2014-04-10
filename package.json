@@ -1,0 +1,26 @@
+{
+  "name": "overlap",
+  "version": "0.0.0",
+  "description": "Overlap two strings that contain new lines. Useful for ASCII drawings, for example.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IonicaBizau/overlap"
+  },
+  "keywords": [
+    "ascii",
+    "node"
+  ],
+  "author": "Ionică Bizău <bizauionica@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IonicaBizau/overlap/issues"
+  },
+  "homepage": "https://github.com/IonicaBizau/overlap"
+}
