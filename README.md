@@ -34,7 +34,7 @@ console.log(Overlap({
 
 ## Test
 
-```
+```sh
 $ npm test
 
 > overlap@0.1.0 test /home/.../overlap
