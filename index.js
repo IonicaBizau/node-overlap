@@ -28,6 +28,9 @@ var Overlap = function (options) {
         }
 
         for (var x = where.x; x < where.x + withStringSize.w; ++x) {
+            if (!withString[y - where.y] || typeof withString[y - where.y][x - where.x] == "undefined") {
+                continue;
+            }
             whoString[y] = replaceCharAt (whoString[y], x, withString[y - where.y][x - where.x]);
         }
     }
