@@ -1,13 +1,5 @@
 var AnsiParser = require("ansi-parser");
 
-function removeAnsiColors(input) {
-    return input.replace(/\u001b\[.*?m/g, "");
-}
-
-function replaceCharAt(str, index, character) {
-    return str.substr(0, index) + character + str.substr(index+character.length);
-}
-
 var Overlap = function(options) {
 
     var whoString = AnsiParser.parse(options.who.split("\n"))
