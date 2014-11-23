@@ -1,4 +1,4 @@
-var Overlap = require ("../index");
+var Overlap = require("../index");
 
 var a =
 "+--------------+\n" +
