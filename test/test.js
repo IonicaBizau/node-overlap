@@ -1,20 +1,21 @@
-var Overlap = require("../index");
-
-var a =
-"+--------------+\n" +
-"|              |\n" +
-"|              |\n" +
-"|              |\n" +
-"|              |\n" +
-"|              |\n" +
-"|              |\n" +
-"+--------------+"
-
-var b =
-"+-------+\n" +
-"|       |\n" +
-"|       |\n" +
-"+-------+"
+var Overlap = require("../index")
+  , Couleurs = require("couleurs")()
+  , a =
+    "+--------------+\n" +
+    "|              |\n" +
+    "|   " + Couleurs.rgb("Hello World", 0, 255, 0) + "  |\n" +
+    "|              |\n" +
+    "|              |\n" +
+    "|              |\n" +
+    "|   " + Couleurs.rgb("Hello World", 0, 255, 0) + "    |\n" +
+    "|              |\n" +
+    "+--------------+"
+  , b =
+    "+-------+\n" +
+    "|       |\n" +
+    "|       |\n" +
+    "+-------+"
+  ;
 
 console.log(Overlap({
     who: a
