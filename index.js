@@ -1,8 +1,8 @@
-function replaceCharAt (str, index, character) {
+function replaceCharAt(str, index, character) {
     return str.substr(0, index) + character + str.substr(index+character.length);
 }
 
-var Overlap = function (options) {
+var Overlap = function(options) {
 
     var whoString = options.who.split("\n")
       , withString = options.with.split("\n")
@@ -31,7 +31,7 @@ var Overlap = function (options) {
             if (!withString[y - where.y] || typeof withString[y - where.y][x - where.x] == "undefined") {
                 continue;
             }
-            whoString[y] = replaceCharAt (whoString[y], x, withString[y - where.y][x - where.x]);
+            whoString[y] = replaceCharAt(whoString[y], x, withString[y - where.y][x - where.x]);
         }
     }
 
