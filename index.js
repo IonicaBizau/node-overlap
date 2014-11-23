@@ -1,11 +1,17 @@
+var AnsiParser = require("ansi-parser");
+
+function removeAnsiColors(input) {
+    return input.replace(/\u001b\[.*?m/g, "");
+}
+
 function replaceCharAt(str, index, character) {
     return str.substr(0, index) + character + str.substr(index+character.length);
 }
 
 var Overlap = function(options) {
 
-    var whoString = options.who.split("\n")
-      , withString = options.with.split("\n")
+    var whoString = AnsiParser.parse(options.who.split("\n"))
+      , withString = AnsiParser.parse(options.with.split("\n"))
       , where = options.where
       , whoStringSize = {
             w: whoString[0].length
@@ -17,13 +23,12 @@ var Overlap = function(options) {
         }
       ;
 
-    // start merging
     for (var y = where.y; y < where.y + withStringSize.h; ++y) {
 
         if (!whoString[y]) {
-            whoString[y] = "";
+            whoString[y] = [];
             for (var i = 0; i < where.x; ++i) {
-                whoString[y] += " ";
+                AnsiParser.addChar(whoString[y], " ");
             }
         }
 
@@ -31,15 +36,11 @@ var Overlap = function(options) {
             if (!withString[y - where.y] || typeof withString[y - where.y][x - where.x] == "undefined") {
                 continue;
             }
-            whoString[y] = replaceCharAt(whoString[y], x, withString[y - where.y][x - where.x]);
+            whoString[y][x] = withString[y - where.y][x - where.x];
         }
     }
 
-    var overlapped = "";
-    for (var y = 0; y < whoString.length; ++y) {
-        overlapped += whoString[y] + "\n";
-    }
-    return overlapped
+    return AnsiParser.stringify(whoString);
 };
 
 module.exports = Overlap;
