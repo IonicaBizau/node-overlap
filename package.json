@@ -1,7 +1,7 @@
 {
   "name": "overlap",
-  "version": "0.1.0",
-  "description": "Overlap two strings that contain new lines. Useful for ASCII drawings, for example.",
+  "version": "1.0.0",
+  "description": "Overlap two strings that contain new lines. Useful for ASCII drawings.",
   "main": "index.js",
   "directories": {
     "test": "test"
