@@ -1,7 +1,24 @@
+// Dependencies
 var AnsiParser = require("ansi-parser");
 
-var Overlap = function(options) {
+/**
+ * Overlap
+ * Overlaps two strings.
+ *
+ * @name Overlap
+ * @function
+ * @param {Object} options An object containing the following fields:
+ *
+ *  - `who` (String): The first string.
+ *  - `with` (String): The second string.
+ *  - `where` (Object): The second string position:
+ *    - `x` (Number): The position on `x` axis.
+ *    - `y` (Number): The position on `y` axis.
+ * @return {String} The result string.
+ */
+module.exports = function(options) {
 
+    // Parse input strings
     var whoString = AnsiParser.parse(options.who.split("\n"))
       , withString = AnsiParser.parse(options.with.split("\n"))
       , where = options.where
@@ -15,6 +32,7 @@ var Overlap = function(options) {
         }
       ;
 
+    // Start magic things
     for (var y = where.y; y < where.y + withStringSize.h; ++y) {
 
         if (!whoString[y]) {
@@ -34,5 +52,3 @@ var Overlap = function(options) {
 
     return AnsiParser.stringify(whoString);
 };
-
-module.exports = Overlap;
