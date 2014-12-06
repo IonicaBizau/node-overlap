@@ -1,6 +1,6 @@
 {
   "name": "overlap",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Overlap two strings that contain new lines. Useful for ASCII drawings.",
   "main": "index.js",
   "directories": {
@@ -28,6 +28,5 @@
   },
   "devDependencies": {
     "couleurs": "^2.0.0"
-  },
-  "devDependencies": {}
+  }
 }
