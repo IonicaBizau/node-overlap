@@ -70,6 +70,9 @@ Overlaps two strings.
 
 
 # Changelog
+## `1.0.1`
+ - Added `ansi-parser` as dependency.
+
 ## `1.0.0`
  - Initial stable release.
  - Color support
@@ -77,7 +80,6 @@ Overlaps two strings.
 
 ## `v0.1.0`
  - Prelease.
-
 
 ## License
 See the [LICENSE](./LICENSE) file.
