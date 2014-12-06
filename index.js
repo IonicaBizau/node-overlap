@@ -12,8 +12,9 @@ var AnsiParser = require("ansi-parser");
  *  - `who` (String): The first string.
  *  - `with` (String): The second string.
  *  - `where` (Object): The second string position:
- *    - `x` (Number): The position on `x` axis.
- *    - `y` (Number): The position on `y` axis.
+ *     - `x` (Number): The position on `x` axis.
+ *     - `y` (Number): The position on `y` axis.
+ *
  * @return {String} The result string.
  */
 module.exports = function(options) {
