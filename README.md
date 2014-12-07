@@ -70,8 +70,11 @@ Overlaps two strings.
 
 
 # Changelog
-## `1.1.0`
+## `1.2.0`
  - Upgraded `ansi-parser` to `1.2.0`.
+
+## `1.1.0`
+ - Upgraded `ansi-parser` to `1.1.0`.
 
 ## `1.0.2`
  - Removed duplicated field `devDependencies` from `package.json` file.
