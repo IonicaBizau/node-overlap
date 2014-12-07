@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/IonicaBizau/overlap",
   "dependencies": {
-    "ansi-parser": "^1.0.0"
+    "ansi-parser": "1.1.0"
   },
   "devDependencies": {
     "couleurs": "^2.0.0"
