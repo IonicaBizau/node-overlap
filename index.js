@@ -22,7 +22,10 @@ module.exports = function(options) {
     // Parse input strings
     var whoString = AnsiParser.parse(options.who.split("\n"))
       , withString = AnsiParser.parse(options.with.split("\n"))
-      , where = options.where
+      , where = {
+            x: parseInt(options.where.x)
+          , y: parseInt(options.where.y)
+        }
       , whoStringSize = {
             w: whoString[0].length
           , h: whoString.length
