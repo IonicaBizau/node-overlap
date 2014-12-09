@@ -34,19 +34,22 @@ module.exports = function(options) {
             w: withString[0].length
           , h: withString.length
         }
+      , y = where.y
+      , x = null
+      , i = 0
       ;
 
     // Start magic things
-    for (var y = where.y; y < where.y + withStringSize.h; ++y) {
+    for (; y < where.y + withStringSize.h; ++y) {
 
         if (!whoString[y]) {
             whoString[y] = [];
-            for (var i = 0; i < where.x; ++i) {
+            for (i = 0; i < where.x; ++i) {
                 AnsiParser.addChar(whoString[y], " ");
             }
         }
 
-        for (var x = where.x; x < where.x + withStringSize.w; ++x) {
+        for (x = where.x; x < where.x + withStringSize.w; ++x) {
             if (!withString[y - where.y] || typeof withString[y - where.y][x - where.x] == "undefined") {
                 continue;
             }

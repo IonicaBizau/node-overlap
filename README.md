@@ -70,6 +70,10 @@ Overlaps two strings.
 
 
 # Changelog
+## `1.4.0`
+ - Upgraded to `ansi-parser@1.3.0`
+ - Minor syntax changes
+
 ## `1.3.0`
  - Convert `where` fields to integer values.
 
