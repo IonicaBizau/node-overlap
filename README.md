@@ -70,32 +70,7 @@ Overlaps two strings.
 
 
 # Changelog
-## `1.4.0`
- - Upgraded to `ansi-parser@1.3.0`
- - Minor syntax changes
-
-## `1.3.0`
- - Convert `where` fields to integer values.
-
-## `1.2.0`
- - Upgraded `ansi-parser` to `1.2.0`.
-
-## `1.1.0`
- - Upgraded `ansi-parser` to `1.1.0`.
-
-## `1.0.2`
- - Removed duplicated field `devDependencies` from `package.json` file.
-
-## `1.0.1`
- - Added `ansi-parser` as dependency.
-
-## `1.0.0`
- - Initial stable release.
- - Color support
- - Documentation
-
-## `v0.1.0`
- - Prelease.
+See the [releases page](https://github.com/IonicaBizau/overlap/releases).
 
 ## License
 See the [LICENSE](./LICENSE) file.
