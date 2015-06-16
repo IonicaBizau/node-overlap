@@ -25,7 +25,9 @@
   },
   "homepage": "https://github.com/IonicaBizau/node-overlap",
   "dependencies": {
-    "ansi-parser": "3.0.0"
+    "ansi-parser": "3.0.0",
+    "couleurs": "5.0.0",
+    "cli-box": "5.0.0"
   },
   "devDependencies": {
     "couleurs": "^5.0.0"
