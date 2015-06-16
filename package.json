@@ -7,7 +7,7 @@
     "example": "node example"
   },
   "scripts": {
-    "test": "node test/test.js"
+    "test": "node example"
   },
   "repository": {
     "type": "git",
