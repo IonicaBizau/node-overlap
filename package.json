@@ -29,5 +29,9 @@
   },
   "devDependencies": {
     "couleurs": "^5.0.0"
+  },
+  "blah": {
+      "h_img": "http://i.imgur.com/iiLhdlD.png",
+      "ex_img": "http://i.imgur.com/TC5QXRt.png"
   }
 }
