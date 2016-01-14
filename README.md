@@ -1,8 +1,8 @@
 [![overlap](http://i.imgur.com/iiLhdlD.png)](#)
 
-# overlap [![Support this project][donate-now]][paypal-donations]
+# overlap [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![Travis](https://img.shields.io/travis/IonicaBizau/node-overlap.svg)](https://travis-ci.org/IonicaBizau/node-overlap/) [![Version](https://img.shields.io/npm/v/overlap.svg)](https://www.npmjs.com/package/overlap) [![Downloads](https://img.shields.io/npm/dt/overlap.svg)](https://www.npmjs.com/package/overlap) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
 
-Overlap two strings that contain new lines. Useful for ASCII drawings.
+> Overlap two strings that contain new lines. Useful for ASCII drawings.
 
 [![overlap](http://i.imgur.com/TC5QXRt.png)](#)
 
