@@ -1,6 +1,6 @@
 {
   "name": "overlap",
-  "version": "2.2.7",
+  "version": "2.2.8",
   "description": "Overlap two strings that contain new lines. Useful for ASCII drawings.",
   "main": "lib/index.js",
   "directories": {
@@ -46,6 +46,9 @@
     "resources/",
     "menu/",
     "cli.js",
-    "index.js"
+    "index.js",
+    "bloggify.js",
+    "bloggify.json",
+    "bloggify/"
   ]
 }
