@@ -6,6 +6,7 @@ You can see below the API reference of this module.
 Overlaps two strings.
 
 #### Params
+
 - **Object** `options`: An object containing the following fields:
  - `who` (String): The first string.
  - `with` (String): The second string.
